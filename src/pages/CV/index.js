@@ -11,7 +11,7 @@ const Resume = () => {
 	};
 
 	const skills = {
-		Frontend: ['JavaScript', 'React', 'HTML/CSS'],
+		Frontend: ['JavaScript', 'ReactJS', 'HTML/CSS'],
 		Backend: ['Node.js', 'Python'],
 		Database: ['SQL', 'MongoDB'],
 	};
