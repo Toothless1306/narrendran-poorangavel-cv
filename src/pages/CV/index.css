@@ -1,0 +1,265 @@
+/* Reset and Base Styles */
+.resume-wrapper * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-wrapper {
+	max-width: 1000px;
+	margin: 30px auto;
+	background: white;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Header Styles */
+.resume-header {
+	background: linear-gradient(135deg, #2c3e50, #4a6491);
+	color: white;
+	padding: 40px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.resume-header::before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.1) 0%,
+		rgba(255, 255, 255, 0) 60%
+	);
+	transform: rotate(30deg);
+	z-index: 0;
+}
+
+.resume-header * {
+	position: relative;
+	z-index: 1; /* all header content stays above */
+}
+
+.profile-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.3);
+	margin: 0 auto 20px;
+	overflow: hidden;
+	background: #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-image i {
+	font-size: 60px;
+	color: #777;
+}
+
+.resume-name {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.resume-title {
+	font-size: 1.2rem;
+	opacity: 0.9;
+	margin-bottom: 20px;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Main Content */
+.resume-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	padding: 40px;
+	gap: 30px;
+}
+
+.content-left,
+.content-right {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.resume-section {
+	margin-bottom: 25px;
+}
+
+.section-title {
+	font-size: 1.5rem;
+	color: #2c3e50;
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #4a6491;
+	position: relative;
+}
+
+.section-title::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #e74c3c;
+}
+
+/* Experience & Education Items */
+.timeline-item {
+	margin-bottom: 20px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.timeline-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 8px;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #4a6491;
+	border-radius: 50%;
+}
+
+.item-title {
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: #2c3e50;
+	margin-bottom: 5px;
+}
+
+.item-subtitle {
+	color: #e74c3c;
+	margin-bottom: 8px;
+	font-style: italic;
+}
+
+.item-date {
+	color: #7f8c8d;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.skill {
+	background: #f1f1f1;
+	padding: 8px 15px;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	transition: all 0.3s ease;
+}
+
+.skill:hover {
+	background: #4a6491;
+	color: white;
+	transform: translateY(-3px);
+}
+
+/* Interests */
+.interests-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.interest {
+	text-align: center;
+	width: 70px;
+}
+
+.interest i {
+	font-size: 1.5rem;
+	color: #4a6491;
+	margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.resume-content {
+		grid-template-columns: 1fr;
+	}
+
+	.resume-header {
+		padding: 30px 20px;
+	}
+
+	.resume-name {
+		font-size: 2rem;
+	}
+}
+
+@media print {
+	.resume-wrapper {
+		box-shadow: none;
+		margin: 0;
+	}
+
+	.skill:hover {
+		background: #f1f1f1;
+		color: inherit;
+		transform: none;
+	}
+}
+
+.contact-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.contact-link:hover {
+	text-decoration: underline;
+}
+
+.company-link {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.company-link:hover {
+	text-decoration: underline;
+	color: #0066cc;
+}
