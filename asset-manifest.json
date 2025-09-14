@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/narrendran-poorangavel-cv/static/css/main.10c0b983.css",
-    "main.js": "/narrendran-poorangavel-cv/static/js/main.48559536.js",
+    "main.css": "/narrendran-poorangavel-cv/static/css/main.da16ccbe.css",
+    "main.js": "/narrendran-poorangavel-cv/static/js/main.4a315097.js",
     "static/js/584.f605a633.chunk.js": "/narrendran-poorangavel-cv/static/js/584.f605a633.chunk.js",
     "static/media/fa-solid-900.woff2": "/narrendran-poorangavel-cv/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
     "static/media/fa-brands-400.woff2": "/narrendran-poorangavel-cv/static/media/fa-brands-400.e7461d69dbbff1310a5c.woff2",
     "static/media/fa-regular-400.woff2": "/narrendran-poorangavel-cv/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
     "static/media/fa-v4compatibility.woff2": "/narrendran-poorangavel-cv/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
     "index.html": "/narrendran-poorangavel-cv/index.html",
-    "main.10c0b983.css.map": "/narrendran-poorangavel-cv/static/css/main.10c0b983.css.map",
-    "main.48559536.js.map": "/narrendran-poorangavel-cv/static/js/main.48559536.js.map",
+    "main.da16ccbe.css.map": "/narrendran-poorangavel-cv/static/css/main.da16ccbe.css.map",
+    "main.4a315097.js.map": "/narrendran-poorangavel-cv/static/js/main.4a315097.js.map",
     "584.f605a633.chunk.js.map": "/narrendran-poorangavel-cv/static/js/584.f605a633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10c0b983.css",
-    "static/js/main.48559536.js"
+    "static/css/main.da16ccbe.css",
+    "static/js/main.4a315097.js"
   ]
 }
