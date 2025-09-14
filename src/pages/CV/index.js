@@ -1,13 +1,47 @@
 import React from 'react';
 import './index.css';
+import NPLogo from '../../component/logo';
 
 const Resume = () => {
+	const openGoogleMaps = () => {
+		window.open(
+			'https://www.google.com/maps/place/Dindigul,+Tamil+Nadu/',
+			'_blank'
+		);
+	};
+
+	const skills = {
+		Frontend: ['JavaScript', 'React', 'HTML/CSS'],
+		Backend: ['Node.js', 'Python'],
+		Database: ['SQL', 'MongoDB'],
+	};
+
+	const languages = [
+		{ name: 'Tamil', proficiency: 'Native' },
+		{ name: 'English', proficiency: 'Professional' },
+		{ name: 'Hindi', proficiency: 'Basic' },
+	];
+
+	const certifications = [
+		{ title: 'HTML-5 The Language', year: '2020' },
+		{ title: 'Network Engineering Cisco', year: '2019' },
+		{ title: 'Node.js - Infosys Springboard', year: '2022' },
+		{ title: 'Angular - Infosys Springboard', year: '2022' },
+		{ title: 'MongoDB Essentials - Infosys Springboard', year: '2022' },
+	];
+
 	return (
 		<div className='resume-wrapper'>
 			<header className='resume-header'>
-				<h1 className='resume-name'>Narrendran Poorangavel</h1>
-				<p className='resume-title'>Full Stack Developer</p>
+				<div className='header-top'>
+					<div className='header-name-title'>
+						<h1 className='resume-name'>Narrendran Poorangavel</h1>
+						<p className='resume-title'>Full Stack Developer</p>
+					</div>
+					<NPLogo />
+				</div>
 				<div className='contact-info'>
+					{/* Email */}
 					<div className='contact-item'>
 						<i className='fas fa-envelope'></i>
 						<span>
@@ -20,35 +54,46 @@ const Resume = () => {
 							</a>
 						</span>
 					</div>
+
+					{/* Phone */}
 					<div className='contact-item'>
-						<i className='fas fa-phone'></i>
+						<i className='fas fa-phone-alt'></i>
 						<span>+91 7868843874</span>
 					</div>
-					<div className='contact-item'>
+
+					{/* Location */}
+					<div
+						className='contact-item location-item'
+						onClick={openGoogleMaps}>
 						<i className='fas fa-map-marker-alt'></i>
-						<span>Dindigul, India</span>
+						<span className='location-text'>Dindigul, India</span>
+						<span className='location-hint'>(View on Maps)</span>
 					</div>
+
+					{/* LinkedIn */}
 					<div className='contact-item'>
-						<i className='fab fa-linkedin'></i>
+						<i className='fab fa-linkedin-in'></i>
 						<span>
 							<a
-								href='https://linkedin.com/in/yourprofile'
+								href='https://www.linkedin.com/in/narrendran-p-0400b621a'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
-								LinkedIn
+								Narrendran Poorangavel
 							</a>
 						</span>
 					</div>
+
+					{/* GitHub */}
 					<div className='contact-item'>
 						<i className='fab fa-github'></i>
 						<span>
 							<a
-								href='https://github.com/yourusername'
+								href='https://github.com/Toothless1306'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
-								GitHub
+								Narrendran Poorangavel
 							</a>
 						</span>
 					</div>
@@ -154,30 +199,22 @@ const Resume = () => {
 						<h2 className='section-title'>Technical Skills</h2>
 						<div className='section-content'>
 							<div className='skills-container'>
-								<div className='skill-category'>
-									<h4>Frontend</h4>
-									<div className='skill-group'>
-										<div className='skill'>JavaScript</div>
-										<div className='skill'>React</div>
-										<div className='skill'>HTML/CSS</div>
+								{Object.entries(skills).map(([category, skillList]) => (
+									<div
+										className='skill-category'
+										key={category}>
+										<h4>{category}</h4>
+										<div className='skill-group'>
+											{skillList.map((skill) => (
+												<div
+													className='skill'
+													key={skill}>
+													{skill}
+												</div>
+											))}
+										</div>
 									</div>
-								</div>
-
-								<div className='skill-category'>
-									<h4>Backend</h4>
-									<div className='skill-group'>
-										<div className='skill'>Node.js</div>
-										<div className='skill'>Python</div>
-									</div>
-								</div>
-
-								<div className='skill-category'>
-									<h4>Database</h4>
-									<div className='skill-group'>
-										<div className='skill'>SQL</div>
-										<div className='skill'>MongoDB</div>
-									</div>
-								</div>
+								))}
 							</div>
 						</div>
 					</section>
@@ -185,48 +222,34 @@ const Resume = () => {
 					<section className='resume-section'>
 						<h2 className='section-title'>Languages</h2>
 						<div className='section-content'>
-							<div className='language-item'>
-								<span className='language-name'>Tamil</span>
-								<span className='language-proficiency'>Native</span>
-							</div>
-							<div className='language-item'>
-								<span className='language-name'>English</span>
-								<span className='language-proficiency'>Professional</span>
-							</div>
-							<div className='language-item'>
-								<span className='language-name'>Hindi</span>
-								<span className='language-proficiency'>Basic</span>
-							</div>
+							{languages.map((lang) => (
+								<div
+									className='language-item'
+									key={lang.name}>
+									<span className='language-name'>{lang.name}</span>
+									<span className='language-proficiency'>
+										{lang.proficiency}
+									</span>
+								</div>
+							))}
 						</div>
 					</section>
 
 					<section className='resume-section'>
 						<h2 className='section-title'>Certifications</h2>
 						<div className='section-content'>
-							<div className='certification-item'>
-								<h4>HTML-5 The Language</h4>
-								<span className='cert-date'>2022</span>
-							</div>
-							<div className='certification-item'>
-								<h4>Network Engineering Cisco</h4>
-								<span className='cert-date'>2022</span>
-							</div>
-							<div className='certification-item'>
-								<h4>Node.js - Infosys Springboard</h4>
-								<span className='cert-date'>2022</span>
-							</div>
-							<div className='certification-item'>
-								<h4>Angular - Infosys Springboard</h4>
-								<span className='cert-date'>2022</span>
-							</div>
-							<div className='certification-item'>
-								<h4>MongoDB Essentials - Infosys Springboard</h4>
-								<span className='cert-date'>2022</span>
-							</div>
+							{certifications.map((cert) => (
+								<div
+									className='certification-item'
+									key={cert.title}>
+									<h4>{cert.title}</h4>
+									<span className='cert-date'>{cert.year}</span>
+								</div>
+							))}
 						</div>
 					</section>
 
-					<section className='resume-section'>
+					{/* <section className='resume-section'>
 						<h2 className='section-title'>Interests</h2>
 						<div className='section-content'>
 							<div className='interests-container'>
@@ -248,7 +271,32 @@ const Resume = () => {
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> */}
+				</div>
+				<div className='declaration-section'>
+					<h2 className='section-title'>Declaration</h2>
+					<div className='section-content declaration-flex'>
+						<div className='declaration-text'>
+							<p>
+								I hereby declare that the information provided above is true to
+								the best of my knowledge and belief.
+							</p>
+							<p>
+								Place: Dindigul <br />
+								Date:{' '}
+								{new Date().toLocaleDateString('en-GB', {
+									day: 'numeric',
+									month: 'long',
+									year: 'numeric',
+								})}
+							</p>
+						</div>
+
+						<div className='declaration-signature'>
+							<p>Signature</p>
+							<div className='signature-line'></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

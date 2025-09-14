@@ -86,6 +86,52 @@
 	gap: 8px;
 }
 
+.location-item {
+	cursor: pointer;
+	color: #a0c0e0;
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.location-item:hover {
+	color: #ffffff;
+	transform: translateY(-2px);
+}
+
+.location-text {
+	font-weight: 500;
+}
+
+.location-hint {
+	font-size: 0.8rem;
+	color: #dcdcdc;
+	font-style: italic;
+	margin-left: 4px;
+}
+
+/* Gmail Icon */
+.contact-item .gmail-icon {
+	position: relative;
+	width: 40px;
+	height: 28px;
+	background: white;
+	border: 2px solid #d44638;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.contact-item .gmail-icon::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 14px solid #d44638;
+}
+
 /* Main Content */
 .resume-content {
 	display: grid;
@@ -129,12 +175,11 @@
 	text-align: left;
 }
 
-/* Experience & Education Items */
+/* Timeline Items */
 .timeline-item {
 	margin-bottom: 20px;
 	position: relative;
 	padding-left: 20px;
-	text-align: left;
 }
 
 .timeline-item::before {
@@ -160,14 +205,12 @@
 	font-size: 1.1rem;
 	color: #2c3e50;
 	margin-bottom: 5px;
-	text-align: left;
 }
 
 .item-subtitle {
 	color: #e74c3c;
 	margin-bottom: 8px;
 	font-style: italic;
-	text-align: left;
 }
 
 .item-date {
@@ -183,14 +226,12 @@
 .timeline-item ul {
 	padding-left: 20px;
 	margin-top: 10px;
-	text-align: left;
 }
 
 .timeline-item li {
 	margin-bottom: 8px;
 	font-size: 0.95rem;
 	line-height: 1.5;
-	text-align: left;
 }
 
 .timeline-item li:last-child {
@@ -202,7 +243,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	text-align: left;
 }
 
 .skill-category h4 {
@@ -210,7 +250,6 @@
 	color: #4a6491;
 	margin-bottom: 8px;
 	font-weight: 600;
-	text-align: left;
 }
 
 .skill-group {
@@ -218,7 +257,6 @@
 	flex-wrap: wrap;
 	gap: 8px;
 	margin-bottom: 12px;
-	text-align: left;
 }
 
 .skill {
@@ -243,7 +281,6 @@
 	margin-bottom: 10px;
 	padding-bottom: 8px;
 	border-bottom: 1px solid #f0f0f0;
-	text-align: left;
 }
 
 .language-item:last-child {
@@ -268,7 +305,6 @@
 	margin-bottom: 12px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #f0f0f0;
-	text-align: left;
 }
 
 .certification-item:last-child {
@@ -294,7 +330,6 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
-	text-align: center;
 }
 
 .interest {
@@ -333,6 +368,45 @@
 .company-link:hover {
 	color: #a0c0e0;
 	text-decoration: underline;
+}
+
+/* Declaration Section */
+.declaration-section {
+	margin-top: 30px;
+	/* width: 100vw; */
+}
+
+.declaration-section .section-title {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.declaration-section .section-content p {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #555;
+}
+
+.declaration-section .declaration-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 15px;
+}
+
+.declaration-text {
+	max-width: 65%;
+}
+
+.declaration-signature {
+	text-align: center;
+}
+
+.signature-line {
+	width: 150px;
+	border-bottom: 1px solid #333;
+	margin-top: 40px;
 }
 
 /* Responsive Design */
@@ -396,12 +470,9 @@
 	.section-title {
 		font-size: 1.3rem;
 	}
-
-	.interests-container {
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
 
+/* Print Styles */
 @media print {
 	.resume-wrapper {
 		box-shadow: none;
@@ -436,4 +507,45 @@
 		font-size: 0.8em;
 		font-weight: normal;
 	}
+}
+/* Header top section with name and logo side by side */
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.header-name-title {
+	flex: 1;
+}
+
+/* Optional: Adjust logo size for header */
+.header-top .logo-container {
+	width: 80px;
+	height: 80px;
+	margin: 0 0 0 20px;
+}
+
+.header-top .monogram {
+	font-size: 32px;
+}
+
+.header-top .monogram::after {
+	bottom: 2px;
+	right: -1px;
+	width: 2px;
+	height: 10px;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /* Center vertically */
+	margin-bottom: 20px;
+}
+
+.header-name-title {
+	flex: 1;
+	min-width: 0; /* Prevents text overflow issues */
 }
