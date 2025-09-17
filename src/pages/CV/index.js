@@ -50,7 +50,7 @@ const Resume = () => {
 						<i className='fas fa-envelope'></i>
 						<span>
 							<a
-								// href='mailto:narrendranpoorangavel@gmail.com'
+								href='mailto:narrendranpoorangavel@gmail.com'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
@@ -79,7 +79,7 @@ const Resume = () => {
 						<i className='fab fa-linkedin-in'></i>
 						<span>
 							<a
-								// href='https://www.linkedin.com/in/narrendran-p-0400b621a'
+								href='https://www.linkedin.com/in/narrendran-p-0400b621a'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
@@ -93,7 +93,7 @@ const Resume = () => {
 						<i className='fab fa-github'></i>
 						<span>
 							<a
-								// href='https://github.com/Toothless1306'
+								href='https://github.com/Toothless1306'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>

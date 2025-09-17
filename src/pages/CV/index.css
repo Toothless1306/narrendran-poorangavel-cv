@@ -518,7 +518,7 @@
 	}
 
 	.contact-link::after {
-		content: ' (' attr(href) ')';
+		/* content: ' (' attr(href) ')'; */
 		font-size: 0.8em;
 		font-weight: normal;
 	}
