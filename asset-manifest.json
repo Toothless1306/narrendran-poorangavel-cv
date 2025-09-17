@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/narrendran-poorangavel-cv/static/css/main.a3d87969.css",
+    "main.css": "/narrendran-poorangavel-cv/static/css/main.57b2503c.css",
     "main.js": "/narrendran-poorangavel-cv/static/js/main.b9b2af1e.js",
     "static/js/584.f605a633.chunk.js": "/narrendran-poorangavel-cv/static/js/584.f605a633.chunk.js",
     "static/media/fa-solid-900.woff2": "/narrendran-poorangavel-cv/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
@@ -8,12 +8,12 @@
     "static/media/fa-regular-400.woff2": "/narrendran-poorangavel-cv/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
     "static/media/fa-v4compatibility.woff2": "/narrendran-poorangavel-cv/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
     "index.html": "/narrendran-poorangavel-cv/index.html",
-    "main.a3d87969.css.map": "/narrendran-poorangavel-cv/static/css/main.a3d87969.css.map",
+    "main.57b2503c.css.map": "/narrendran-poorangavel-cv/static/css/main.57b2503c.css.map",
     "main.b9b2af1e.js.map": "/narrendran-poorangavel-cv/static/js/main.b9b2af1e.js.map",
     "584.f605a633.chunk.js.map": "/narrendran-poorangavel-cv/static/js/584.f605a633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3d87969.css",
+    "static/css/main.57b2503c.css",
     "static/js/main.b9b2af1e.js"
   ]
 }
