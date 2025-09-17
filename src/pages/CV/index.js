@@ -11,9 +11,13 @@ const Resume = () => {
 	};
 
 	const skills = {
-		Frontend: ['JavaScript', 'ReactJS', 'HTML/CSS'],
+		Frontend: ['JavaScript', 'ReactJS', 'HTML5/CSS3'],
 		Backend: ['Node.js', 'Python'],
-		Database: ['SQL', 'MongoDB'],
+		Database: [
+			,
+			// 'SQL'
+			'MongoDB',
+		],
 	};
 
 	const languages = [
@@ -23,11 +27,11 @@ const Resume = () => {
 	];
 
 	const certifications = [
+		{ title: 'Node.js - Infosys Springboard', year: '2022' },
+		{ title: 'MongoDB Essentials - Infosys Springboard', year: '2022' },
+		{ title: 'Angular - Infosys Springboard', year: '2022' },
 		{ title: 'HTML-5 The Language', year: '2020' },
 		{ title: 'Network Engineering Cisco', year: '2019' },
-		{ title: 'Node.js - Infosys Springboard', year: '2022' },
-		{ title: 'Angular - Infosys Springboard', year: '2022' },
-		{ title: 'MongoDB Essentials - Infosys Springboard', year: '2022' },
 	];
 
 	return (
@@ -38,7 +42,7 @@ const Resume = () => {
 						<h1 className='resume-name'>Narrendran Poorangavel</h1>
 						<p className='resume-title'>Full Stack Developer</p>
 					</div>
-					<NPLogo />
+					{/* <NPLogo /> */}
 				</div>
 				<div className='contact-info'>
 					{/* Email */}
@@ -46,7 +50,7 @@ const Resume = () => {
 						<i className='fas fa-envelope'></i>
 						<span>
 							<a
-								href='mailto:narrendranpoorangavel@gmail.com'
+								// href='mailto:narrendranpoorangavel@gmail.com'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
@@ -62,20 +66,20 @@ const Resume = () => {
 					</div>
 
 					{/* Location */}
-					<div
+					{/* <div
 						className='contact-item location-item'
 						onClick={openGoogleMaps}>
 						<i className='fas fa-map-marker-alt'></i>
 						<span className='location-text'>Dindigul, India</span>
 						<span className='location-hint'>(View on Maps)</span>
-					</div>
+					</div> */}
 
 					{/* LinkedIn */}
 					<div className='contact-item'>
 						<i className='fab fa-linkedin-in'></i>
 						<span>
 							<a
-								href='https://www.linkedin.com/in/narrendran-p-0400b621a'
+								// href='https://www.linkedin.com/in/narrendran-p-0400b621a'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
@@ -89,7 +93,7 @@ const Resume = () => {
 						<i className='fab fa-github'></i>
 						<span>
 							<a
-								href='https://github.com/Toothless1306'
+								// href='https://github.com/Toothless1306'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='contact-link'>
@@ -105,11 +109,12 @@ const Resume = () => {
 					<section className='resume-section'>
 						<h2 className='section-title'>Professional Summary</h2>
 						<div className='section-content'>
-							<p>
-								Junior Full Stack Developer with 9 months of experience in
-								end-to-end application development using the MERN stack.
-							</p>
+							<p></p>
 							<ul>
+								<li>
+									Junior Full Stack Developer with 9 months of experience in
+									end-to-end application development using the MERN stack.
+								</li>
 								<li>
 									Skilled in building efficient and logical web applications.
 								</li>
@@ -128,31 +133,29 @@ const Resume = () => {
 						<h2 className='section-title'>Work Experience</h2>
 						<div className='section-content'>
 							<div className='timeline-item'>
-								<div className='timeline-header'>
-									<h3 className='item-title'>Junior Engineer (Full Stack)</h3>
-									<p className='item-date'>December 2024 - September 2025</p>
-								</div>
-								<p className='item-subtitle'>
+								<div className='item-subtitle'>
 									<a
 										href='https://www.gwayerp.com'
 										target='_blank'
 										rel='noopener noreferrer'
-										className='company-link'>
-										GwayERP Tech Solutions
-									</a>
-								</p>
+										className='company-link'></a>{' '}
+									GwayERP Tech Solutions - Junior Engineer (Full Stack)
+									<p className='item-date'>December 2024 - September 2025</p>
+								</div>
+								<p className='timeline-header'></p>
 								<ul>
 									<li>
 										Developed and maintained full-stack web applications for the
-										company's ERP products using the MERN stack.
+										company's client-facing ERP products using the MERN stack.
 									</li>
 									<li>
-										Built RESTful APIs, designed database schemas, and created
-										responsive user interfaces.
+										Built and deployed RESTful APIs, designed efficient database
+										schemas, and developed user interfaces that improved data
+										flow, reduced load times.
 									</li>
 									<li>
-										Collaborated with a development team to deliver features in
-										an Agile environment.
+										Partnered with cross-functional teams in an Agile
+										environment to successfully deliver new features.
 									</li>
 									<li>
 										Gained experience in end-to-end application development and
@@ -167,27 +170,28 @@ const Resume = () => {
 						<h2 className='section-title'>Education</h2>
 						<div className='section-content'>
 							<div className='timeline-item'>
-								<div className='timeline-header'>
-									<h3 className='item-title'>B.Tech, Information Technology</h3>
-									<p className='item-date'>2020 - 2024</p>
-								</div>
 								<p className='item-subtitle'>
 									<a
 										href='https://karpagamtech.ac.in/'
 										target='_blank'
 										rel='noopener noreferrer'
-										className='company-link'>
-										Karpagam Institute of Technology
-									</a>
+										className='company-link'></a>
+									Karpagam Institute of Technology
 								</p>
+								<div className='timeline-header'>
+									<h3 className='item-title'>
+										B.Tech, Information Technology |
+									</h3>
+									<p className='item-date'>2020 - 2024</p>
+									<h3 className='item-title'> CGPA:7.83/10</h3>
+								</div>
 								<ul>
-									<li>
-										Specialized in Software Engineering. Graduated with honors.
-									</li>
-									<li>
+									{/* <li>Specialized in Software Engineering.</li> */}
+									{/* <li>Graduated 2024 </li> */}
+									{/* <li>
 										Relevant Coursework: Algorithms, Data Structures, Web
 										Development.
-									</li>
+									</li> */}
 								</ul>
 							</div>
 						</div>
@@ -220,6 +224,20 @@ const Resume = () => {
 					</section>
 
 					<section className='resume-section'>
+						<h2 className='section-title'>Certifications</h2>
+						<div className='section-content'>
+							{certifications.map((cert) => (
+								<div
+									className='certification-item'
+									key={cert.title}>
+									<h4>{cert.title}</h4>
+									{/* <span className='cert-date'>{cert.year}</span> */}
+								</div>
+							))}
+						</div>
+					</section>
+
+					<section className='resume-section'>
 						<h2 className='section-title'>Languages</h2>
 						<div className='section-content'>
 							{languages.map((lang) => (
@@ -230,20 +248,6 @@ const Resume = () => {
 									<span className='language-proficiency'>
 										{lang.proficiency}
 									</span>
-								</div>
-							))}
-						</div>
-					</section>
-
-					<section className='resume-section'>
-						<h2 className='section-title'>Certifications</h2>
-						<div className='section-content'>
-							{certifications.map((cert) => (
-								<div
-									className='certification-item'
-									key={cert.title}>
-									<h4>{cert.title}</h4>
-									<span className='cert-date'>{cert.year}</span>
 								</div>
 							))}
 						</div>
@@ -273,15 +277,16 @@ const Resume = () => {
 						</div>
 					</section> */}
 				</div>
-				<div className='declaration-section'>
-					<h2 className='section-title'>Declaration</h2>
-					<div className='section-content declaration-flex'>
-						<div className='declaration-text'>
-							<p>
-								I hereby declare that the information provided above is true to
-								the best of my knowledge and belief.
-							</p>
-							<p>
+			</div>
+			<div className='declaration-section'>
+				<h2 className='section-title'>Declaration</h2>
+				<div className='section-content declaration-flex'>
+					<div className='declaration-text'>
+						<p>
+							I hereby declare that the information provided above is true to
+							the best of my knowledge and belief.
+						</p>
+						{/* <p>
 								Place: Dindigul <br />
 								Date:{' '}
 								{new Date().toLocaleDateString('en-GB', {
@@ -289,14 +294,13 @@ const Resume = () => {
 									month: 'long',
 									year: 'numeric',
 								})}
-							</p>
-						</div>
+							</p> */}
+					</div>
 
-						<div className='declaration-signature'>
+					{/* <div className='declaration-signature'>
 							<p>Signature</p>
 							<div className='signature-line'></div>
-						</div>
-					</div>
+						</div> */}
 				</div>
 			</div>
 		</div>
