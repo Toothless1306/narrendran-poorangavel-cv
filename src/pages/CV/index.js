@@ -128,10 +128,39 @@ const Resume = () => {
 							</ul>
 						</div>
 					</section>
-
 					<section className='resume-section'>
 						<h2 className='section-title'>Work Experience</h2>
 						<div className='section-content'>
+							<div className='timeline-item'>
+								<div className='item-subtitle'>
+									<a
+										href='https://www.elitetechpark.com/m'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='company-link'></a>{' '}
+									Elite Tech Park - Zoho Developer
+									<p className='item-date'>March 2024 - July 2024</p>
+								</div>
+								<p className='timeline-header'></p>
+								<ul>
+									<li>
+										Automated a manual data entry process by developing a Deluge
+										script, reducing the team's weekly administrative workload.
+									</li>
+									<li>
+										Optimized the performance of a key Zoho Creator application.
+									</li>
+									<li>
+										Streamlined the lead qualification process in Zoho CRM by
+										implementing automated workflow rules.
+									</li>
+									<li>
+										Proactively identified and documented a flaw in an existing
+										workflow; proposed and implemented a fix that improved
+										system reliability.
+									</li>
+								</ul>
+							</div>
 							<div className='timeline-item'>
 								<div className='item-subtitle'>
 									<a
